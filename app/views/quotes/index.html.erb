@@ -1,0 +1,16 @@
+<main class="container">
+  <div class="header">
+    <h1>Quotes</h1>
+    <% if flash[:notice] %>
+      <div class="notice"><%= flash[:notice] %></div>
+    <% end %>
+
+    <%= link_to "New quote",
+      new_quote_path,
+      class: "btn btn--primary"
+
+    %>
+  </div>
+
+  <%= render @quotes %>
+</main>
