@@ -3,6 +3,7 @@ require "application_system_test_case"
 class QuotesTest < ApplicationSystemTestCase
   def setup
     @quote = Quote.ordered.first
+    login_as users(:accountant)
   end
 
   test "Showing a quote" do

@@ -18,7 +18,8 @@ gem "stimulus-rails"
 gem "cssbundling-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
-gem 'redis'
+gem "redis"
+gem "devise"
 
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
@@ -31,7 +32,7 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "solid_cache"
 gem "solid_queue"
 gem "solid_cable"
-gem 'simple_form'
+gem "simple_form"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
